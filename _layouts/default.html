@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  <body class="page-{{ page.url | remove_first: '/' | replace: '/', '-' | default: 'home' }}">
+    {%- include theme-script.html -%}
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+    {%- include footer.html -%}
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Mouse Follower CDN -->
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <!-- Typed.js CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/feed-loader.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/carousel.js' | relative_url }}"></script>
+  </body>
+</html>

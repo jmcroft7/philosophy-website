@@ -1,0 +1,138 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+<div class="tab-container">
+  <div class="tab-nav">
+    <button class="tab-link active" data-tab="professional">Professional</button>
+    <button class="tab-link" data-tab="personal">Personal</button>
+  </div>
+
+  <div id="professional" class="tab-content active">
+    <div class="about-intro">
+      {%- include professional-carousel.html -%}
+      <div class="about-summary">
+        <h3 class="typed-subheader"><span id="typed-summary"></span></h3>
+        <p>I am an analytical developer based out of Minnesota with over 5 years of experience building creative digital solutions. I work primarily with Java, Typescript, and Python.</p>
+        <p>I enjoy working with new technologies, collaborating with others, and problem-solving. When I'm not coding, you can find me either reading or enjoying the outdoors. Let's connect and create something amazing together!</p>
+        <div class="social-icons">
+          <a href="{{ site.social.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+          </a>
+          <a href="{{ site.social.github }}" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="{{ site.social.cv | relative_url }}" aria-label="CV" target="_blank" rel="noopener noreferrer">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CV</title><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13,3.5L18.5,9H13V3.5M8,12H16V14H8V12M8,16H16V18H8V16Z" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h3>Certificates & Workshops</h3>
+    <div class="accomplishments-grid">
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Google AI Workshop</span>
+        <span class="accomplishment-date">Dec 2025</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Generative AI Certificate</span>
+        <span class="accomplishment-date">Nov 2025</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Full Stack Java Developer Certificate</span>
+        <span class="accomplishment-date">Jul 2022</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Full Stack Software Engineer Bootcamp</span>
+        <span class="accomplishment-date">Aug 2021</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Responsive Web Design</span>
+        <span class="accomplishment-date">Sep 2021</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Google IT Support Professional</span>
+        <span class="accomplishment-date">Mar 2021</span>
+      </div>
+    </div>
+
+    <h3>Skills</h3>
+    <div class="skills-section">
+      <div class="skill-row">
+        <span class="skill-category">Languages</span>
+        <span class="skill-items">JavaScript, TypeScript, Python, Ruby, Java</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-category">Technologies</span>
+        <span class="skill-items">React, Node.js, Tailwind CSS, Jekyll, Git, Docker</span>
+      </div>
+    </div>
+
+    <h3>Experience</h3>
+    <p><strong>Senior Software Engineer</strong><br>
+    <em>UnitedHealth Group | 2022 - Present</em><br>
+    Innovating on core products, focusing on performance, scalability, and user experience with React and TypeScript.</p>
+
+    <h3>Education</h3>
+    <p><strong>Pursuing B.A. in Philosophy</strong><br>
+    <em>Minneapolis College</em></p>
+
+    <p><a href="/assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer">View Full Resume (PDF) &rarr;</a></p>
+  </div>
+
+  <div id="personal" class="tab-content">
+    <div class="about-intro">
+      <div class="about-summary">
+        <h3 class="typed-subheader"><span id="typed-personal-summary"></span></h3>
+        <p>I am passionate about exploring complex ideas and translating them into practical solutions. My background blends philosophy with software engineering, allowing me to approach problems from both a conceptual and a highly technical perspective.</p>
+        <p>Outside of technology, my primary focus is philosophy. I host a weekly discussion group exploring topics from ethics in AI to the philosophy of mind. I'm also an avid reader, a lifelong learner, and enjoy exploring the intersection of technology and the humanities.</p>
+        <div class="social-icons">
+          <a href="{{ site.social.substack }}" aria-label="Substack" target="_blank" rel="noopener noreferrer">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Substack</title><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+          </a>
+          <a href="{{ site.social.goodreads }}" aria-label="Goodreads" target="_blank" rel="noopener noreferrer">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Goodreads</title><path d="M19 2L12 6v14.5c0 .28.22.5.5.5s.5-.22.5-.5V7.2l6-2.8V19H5V5h6V.5c0-.28-.22-.5-.5-.5s-.5.22-.5.5V4H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V3c0-.55-.45-1-1-1h-2z"/></svg>
+          </a>
+        </div>
+      </div>
+      {%- include personal-carousel.html -%}
+    </div>
+
+
+    <h3>Noteworthy Accomplishments</h3>
+    <div class="accomplishments-grid">
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Host a Philosophy-Based Blog</span>
+        <span class="accomplishment-date">Mar 2026</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Host Weekly Ethics Discussion Group</span>
+        <span class="accomplishment-date">Feb 2026</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Grew First Batch of Oyster Mushrooms</span>
+        <span class="accomplishment-date">Jul 2024</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">Graduated Coding Bootcamp</span>
+        <span class="accomplishment-date">Aug 2021</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">1st Place, Frozen Classic Ping Pong</span>
+        <span class="accomplishment-date">Feb 2019</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">1st Place, Bodybuilding Competition</span>
+        <span class="accomplishment-date">May 2017</span>
+      </div>
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">1st Place, Alabama Writing Fair</span>
+        <span class="accomplishment-date">Apr 2013</span>
+      </div>
+    </div>
+
+  </div>
+</div>

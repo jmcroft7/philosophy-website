@@ -1,0 +1,10 @@
+<script>
+  // Immediately apply theme to avoid FOUC
+  (function() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.documentElement.classList.add('dark-mode');
+    }
+  })();
+</script>

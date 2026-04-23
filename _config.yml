@@ -1,0 +1,33 @@
+title: Johnathan Croft
+author:
+  name: Johnathan Croft
+  email: your-email@example.com
+description: >-
+  A professional portfolio and blog exploring philosophy, thoughts, and projects.
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+theme: minima # Optional if we use custom layouts, but good default to have
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - docs/
+
+# Social media links
+social:
+  linkedin: https://www.linkedin.com/in/your-username
+  github: https://github.com/your-username
+  substack: https://latelythinking.substack.com
+  goodreads: https://www.goodreads.com/user/show/your-id
+  cv: /assets/documents/resume.pdf
