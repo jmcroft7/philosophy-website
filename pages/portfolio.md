@@ -6,20 +6,51 @@ permalink: /portfolio/
 
 Here is a selection of my recent work and projects.
 
-<div class="portfolio-grid">
-  <div class="portfolio-item">
-    <h3>Project Alpha</h3>
-    <p>An open-source tool for analyzing philosophical texts using natural language processing.</p>
-    <a href="#">View Repository</a>
+<div class="tab-container">
+  <div class="tab-nav">
+    <button class="tab-link active" data-tab="coding">Coding</button>
+    <button class="tab-link" data-tab="philosophy">Philosophy</button>
   </div>
-  <div class="portfolio-item">
-    <h3>Project Beta</h3>
-    <p>A web application built to facilitate structured ethical debates online.</p>
-    <a href="#">Live Demo</a>
+
+  <div id="coding" class="tab-content active">
+    <div class="compact-grid-multi">
+      {% assign code_items = site.data.portfolio | where: "type", "code" %}
+      {% for item in code_items %}
+      <div class="compact-item">
+        <div class="compact-info">
+          <span class="compact-title">{{ item.title }}</span>
+          <p class="compact-desc">{{ item.description }}</p>
+        </div>
+        <div class="compact-action">
+          {% if item.link and item.link != "Internal" and item.link != "#" %}
+            <a target="_blank" rel="noopener noreferrer" href="{{ item.link }}" class="pill-btn" style="padding: 0.5rem 1.5rem; font-size: 0.8rem; margin: 0;">View Repository</a>
+          {% else %}
+            <span class="portfolio-badge" style="margin: 0;">Protected Work</span>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
-  <div class="portfolio-item">
-    <h3>Essay: The Ethics of Code</h3>
-    <p>A published essay exploring the moral responsibilities of software developers.</p>
-    <a href="#">Read Essay</a>
+
+  <div id="philosophy" class="tab-content">
+    <div class="compact-grid">
+      {% assign phil_items = site.data.portfolio | where: "type", "philosophy" %}
+      {% for item in phil_items %}
+      <div class="compact-item">
+        <div class="compact-info">
+          <span class="compact-title">{{ item.title }}</span>
+          <p class="compact-desc">{{ item.description }}</p>
+        </div>
+        <div class="compact-action">
+          {% if item.link and item.link != "Internal" and item.link != "#" %}
+            <a target="_blank" rel="noopener noreferrer" href="{{ item.link }}" class="pill-btn" style="padding: 0.5rem 1.5rem; font-size: 0.8rem; margin: 0;">Read Essay</a>
+          {% else %}
+            <span class="portfolio-badge" style="margin: 0;">Protected Work</span>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>

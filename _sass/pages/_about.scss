@@ -1,0 +1,206 @@
+/* Tab Navigation */
+.tab-container {
+  margin-top: 2rem;
+}
+
+.tab-nav {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+}
+
+.tab-link {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-light);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tab-link.active {
+  color: var(--text-color);
+  font-weight: 600;
+  border-bottom-color: var(--accent-color);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* About Page Specifics */
+.about-intro {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.about-pfp {
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
+
+.about-pfp.swiper-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.about-pfp .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-summary {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-summary .social-icons {
+  justify-content: flex-start;
+}
+
+/* Staggered About Section */
+.about-staggered-row {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.about-staggered-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-staggered-image {
+  flex: 1;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: var(--shadow-subtle);
+  position: relative;
+}
+
+/* Image Variants Utility Classes */
+.img-square {
+  aspect-ratio: 1 / 1;
+}
+
+.img-vertical {
+  aspect-ratio: 3 / 4;
+}
+
+.img-square img,
+.img-vertical img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-staggered-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+
+  .about-staggered-row,
+  .about-staggered-row.reverse {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-staggered-image {
+    max-width: 100%;
+  }
+}
+
+.about-subheader {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.about-summary h3 {
+  margin-top: 0;
+}
+
+.accomplishments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.accomplishment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.accomplishment-item:hover {
+  border-color: var(--accent-color);
+}
+
+.accomplishment-title {
+  font-weight: 500;
+}
+
+.accomplishment-date {
+  color: var(--text-light);
+  font-size: 0.9em;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+@media (max-width: 600px) {
+  .accomplishments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills-section {
+  margin-bottom: 2.5rem;
+}
+
+.skill-row {
+  display: flex;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.skill-row:first-child {
+  border-top: 1px solid var(--border-color);
+}
+
+.skill-category {
+  font-weight: 600;
+  width: 120px;
+  flex-shrink: 0;
+  color: var(--text-light);
+}
+
+.skill-items {
+  flex: 1;
+}

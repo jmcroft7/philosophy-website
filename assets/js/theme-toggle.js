@@ -1,23 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const toggleSwitch = document.getElementById('theme-toggle');
-  if (!toggleSwitch) {
+  const toggleBtn = document.getElementById('theme-toggle');
+  if (!toggleBtn) {
     return;
   }
 
   const htmlEl = document.documentElement;
 
-  // Sync toggle state with current theme
-  if (htmlEl.classList.contains('dark-mode')) {
-    toggleSwitch.checked = true;
-  }
-
-  toggleSwitch.addEventListener('change', () => {
-    if (toggleSwitch.checked) {
-      htmlEl.classList.add('dark-mode');
-      localStorage.setItem('theme', 'dark');
-    } else {
+  toggleBtn.addEventListener('click', () => {
+    if (htmlEl.classList.contains('dark-mode')) {
       htmlEl.classList.remove('dark-mode');
       localStorage.setItem('theme', 'light');
+    } else {
+      htmlEl.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
     }
   });
 });

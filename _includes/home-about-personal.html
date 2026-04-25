@@ -1,0 +1,44 @@
+<div class="about-staggered-row">
+  <div class="about-staggered-image img-vertical">
+    <img src="{{ '/assets/images/home/hobbies_1.png' | relative_url }}" alt="Personal photo 1">
+  </div>
+  <div class="about-staggered-content">
+    <p style="font-size: 1.2rem; line-height: 1.8;">{{ site.data.about.personal.bio_primary }}</p>
+  </div>
+</div>
+
+<div class="about-staggered-row reverse">
+  <div class="about-staggered-image img-square">
+    <img src="{{ '/assets/images/home/hobbies_2.jpg' | relative_url }}" alt="Personal photo 2">
+  </div>
+  <div class="about-staggered-content">
+    <p style="font-size: 1.2rem; line-height: 1.8;">{{ site.data.about.personal.bio_secondary }}</p>
+    <div class="social-icons" style="margin-top: 2rem;">
+      <a href="{{ site.social.substack }}" aria-label="Substack" target="_blank" rel="noopener noreferrer">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Substack</title><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+      </a>
+      <a href="{{ site.social.goodreads }}" aria-label="Goodreads" target="_blank" rel="noopener noreferrer">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Goodreads</title><path d="M19 2L12 6v14.5c0 .28.22.5.5.5s.5-.22.5-.5V7.2l6-2.8V19H5V5h6V.5c0-.28-.22-.5-.5-.5s-.5.22-.5.5V4H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V3c0-.55-.45-1-1-1h-2z"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="about-staggered-row">
+  <div class="about-staggered-image img-vertical">
+    <img src="{{ '/assets/images/home/hobbies_3.jpg' | relative_url }}" alt="Personal photo 3">
+  </div>
+  <div class="about-staggered-content">
+    <h3 style="margin-top: 0; margin-bottom: 1rem;">Noteworthy Accomplishments</h3>
+    <div class="accomplishments-grid" style="margin-bottom: 2rem;">
+      {% for item in site.data.about.personal.accomplishments limit:3 %}
+      <div class="accomplishment-item">
+        <span class="accomplishment-title">{{ item.title }}</span>
+        <span class="accomplishment-date">{{ item.date }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <a href="/about/" class="pill-btn">Read Full Bio</a>
+  </div>
+</div>

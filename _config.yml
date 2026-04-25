@@ -1,15 +1,15 @@
 title: Johnathan Croft
 author:
   name: Johnathan Croft
-  email: your-email@example.com
+  email: croftmjohn@gmail.com
 description: >-
   A professional portfolio and blog exploring philosophy, thoughts, and projects.
 
 # --- Deployment Settings ---
 # `url` is your main GitHub Pages domain.
-url: "https://your-username.github.io" # Replace with your GitHub username
+url: "https://john-croft.com" # Replace with your GitHub username
 # `baseurl` is the name of your repository.
-baseurl: "/philosophy-website"
+baseurl: ""
 
 # Plugins
 plugins:
@@ -29,8 +29,8 @@ exclude:
 
 # Social media links
 social:
-  linkedin: https://www.linkedin.com/in/your-username
-  github: https://github.com/your-username
-  substack: https://latelythinking.substack.com
-  goodreads: https://www.goodreads.com/user/show/your-id
+  linkedin: https://www.linkedin.com/in/devjohnathan/
+  github: https://github.com/jmcroft7
+  substack: https://substack.com/@johncroft1
+  goodreads: https://www.goodreads.com/johncroft1
   cv: /assets/documents/resume.pdf

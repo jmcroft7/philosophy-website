@@ -1,0 +1,131 @@
+/* Home page intro card */
+.intro-card {
+  display: flex;
+  align-items: flex-end;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding: 4rem 0;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.intro-image {
+  flex-basis: 280px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.intro-content-wrapper {
+  flex: 1;
+  min-width: 280px;
+}
+
+.typed-header {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  line-height: 1.2;
+  font-family: var(--font-heading);
+}
+
+.intro-name {
+  display: inline;
+  font-size: 4.2rem;
+  font-weight: 800;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.typed-cursor {
+  color: var(--accent-color);
+  font-weight: 300;
+  font-size: 4.2rem;
+}
+
+.social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.social-icons a {
+  color: var(--text-light);
+  display: inline-block;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Home Details Section */
+.home-details {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.details-heading {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
+
+.details-heading::before {
+  content: '[ ';
+}
+
+.details-heading::after {
+  content: ' ]';
+}
+
+.details-divider {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+.home-columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.home-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.home-column h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
