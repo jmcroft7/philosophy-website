@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <div class="home">
-  <div class="intro-card" >
+  <div class="intro-card">
     <div class="intro-image img-square" data-cursor-text="Hello!">
       <img src="{{ '/assets/images/home/01_pfp.png' | relative_url }}" alt="Profile picture for {{ site.author.name }}">
     </div>
@@ -84,10 +84,11 @@ title: Home
     </div>
   </div>
 
-  <div class="home-section gsap-panel section-dark" id="about" data-bg-color="var(--color-bg-about, #f4f0ff)" data-text-color="#fdfcff">
+  <div class="home-section gsap-panel section-dark" id="about" data-bg-color="var(--color-bg-about, #f4f0ff)"
+    data-text-color="#fdfcff">
     <h2>About Me Professionally</h2>
     {% include home-about.html %}
-    
+
     <h2 style="margin-top: 8rem;">About Me Personally</h2>
     {% include home-about-personal.html %}
   </div>
